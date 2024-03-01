@@ -1,6 +1,6 @@
 import { Type } from '@fastify/type-provider-typebox';
 import { GraphQLObjectType, GraphQLSchema } from 'graphql';
-import { user } from './entry/user.js';
+import { user, users } from './entry/user.js';
 
 export const gqlResponseSchema = Type.Partial(
   Type.Object({
@@ -25,6 +25,7 @@ export const QueryRoot = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
     user,
+    users,
   },
 });
 
