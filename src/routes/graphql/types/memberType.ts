@@ -23,5 +23,5 @@ export type ILoaders = {
 
 export type IContext = {
   prisma: PrismaClient;
-  loaders: ILoaders;
+  // loaders: ILoaders;
 };
